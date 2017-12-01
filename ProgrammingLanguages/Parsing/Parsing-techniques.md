@@ -32,3 +32,12 @@ a subset of context free grammars
 of lookahead needed to parse the grammar.
 3.  K=1 parsers are easy to hand write, but it becomes harder for K > 1.
 4. Many production level languages are written using handwritten LL parsers.
+
+## Parser Combinators
+1.  A way of designing a parser through the composition of smaller parsers.
+2.  Tend to result in much more readable parsers.
+
+## Compiler compilers / Parser generators
+1.  Typically allow users to write a grammar in a DSL as input and get a parser as output.
+2.  Less control over the parser and its internal state / error messaging
+3.  Because of 2. this is why many production level languages use hand written recursive descent parsers.
