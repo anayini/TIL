@@ -41,3 +41,9 @@ of lookahead needed to parse the grammar.
 1.  Typically allow users to write a grammar in a DSL as input and get a parser as output.
 2.  Less control over the parser and its internal state / error messaging
 3.  Because of 2. this is why many production level languages use hand written recursive descent parsers.
+
+## Error Productions
+1.  A way to encode common syntax errors within a grammar.
+2.  Make special rules that match common syntax errors.
+3.  When parsing them we can handle them specially, instead of getting
+confused and just being unable to parse!
