@@ -26,3 +26,10 @@ struct Phantom<A> {
 ```
 2.  Can use this extra generic parameter is a tag that can encode specific states.
 3.  Can create function that take phantom types that have a specific type parameter in order to implement methods that are only possible in certain states.
+
+#### Dependent Types
+
+1.  A type whose definition depends on a value
+2.  - Normal Type = "pair of integers"
+    - Dependent Type = "pair of integers where second integer is negative"
+3.
