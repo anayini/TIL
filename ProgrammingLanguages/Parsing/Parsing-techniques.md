@@ -33,6 +33,11 @@ of lookahead needed to parse the grammar.
 3.  K=1 parsers are easy to hand write, but it becomes harder for K > 1.
 4. Many production level languages are written using handwritten LL parsers.
 
+#### Packrat Parsers
+1.  Similar to a recursive descent parser.
+2.  Runs in linear time, but has larger storage requirements.
+3.  Based on parsing expression grammars (a formal grammar similar to CFGs)
+
 ## Parser Combinators
 1.  A way of designing a parser through the composition of smaller parsers.
 2.  Tend to result in much more readable parsers.
