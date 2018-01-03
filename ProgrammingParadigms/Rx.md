@@ -21,3 +21,11 @@ Provides an abstraction useful for the composition of asynchronous APIs.
 - ReplaySubject - Replays a buffer of values to new subscribers
 
 - Variable - Wrapper on BehaviorSubject that preserves latest value as state and replays latest value to subscribers.
+
+#### Traits - Specialized forms of observables
+
+- Maybe - Emits `.next(Element)`, `.completed` or `.error(Error)` or `.completed`.  Represents a stream of 0 or 1 events
+
+- Completable - Emits `.completed` OR `.error(Error)`.  Represents something that completes or errors, with no events.
+
+- Single - Emits `.next(Element)`, `.completed` OR `.error(Error)`.  Represents a stream that emits exactly 1 event.
